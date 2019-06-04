@@ -1,3 +1,5 @@
-�C���^�[���V�b�v�ō쐬�����}���Ǘ��A�v���ł��B
-���O�C���̏������[�U�ƃp�X���[�h�͂��ꂼ��master,master�ł��B
-�{�̑ݏo�A�ԋp��V�K�o�^�A�폜�A���[�U�̓o�^�A�폜�Ȃǂ��ł��܂��B
+インターンシップで作成した図書管理アプリです。
+開発環境はandroid studioを用いました。
+ログインの初期ユーザとパスワードはそれぞれmaster,masterです。
+
+本の貸出、返却や新規登録、削除、ユーザの登録、削除などができます。
