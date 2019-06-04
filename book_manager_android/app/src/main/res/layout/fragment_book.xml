@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_book_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/search_clear_button"
+            android:layout_width="21dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.32"
+            android:background="@drawable/button_background"
+            android:text="✕" />
+
+        <Button
+            android:id="@+id/search_book_button"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="0"
+            android:text="検索" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="検索条件" />
+
+        <Spinner
+            android:id="@+id/book_search_spinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/book_list"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_weight="0.96" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/book_sort_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75" />
+
+        <Spinner
+            android:id="@+id/book_asc_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">>
+
+        <Button
+            android:id="@+id/delete_book_button"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="本を消去する" />
+
+
+        <Button
+            android:id="@+id/add_book_button"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="本を追加する" />
+    </LinearLayout>
+</LinearLayout>
